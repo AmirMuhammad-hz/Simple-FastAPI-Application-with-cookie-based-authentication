@@ -6,7 +6,7 @@ from pydantic import BaseModel
 recaptcha_site_key = "secret"
 recaptcha_secret_key = "secret"
 
-cookie_expire_time: int = 30    # also expire time for mongodb ttl index, which I have created in MongoDBCompass
+cookie_expire_time: int = 30    # also expire time for mongodb ttl index, which should be created before running the application
 
 # database and collections:
 mongo_client = AsyncIOMotorClient('mongodb://localhost:27017')
